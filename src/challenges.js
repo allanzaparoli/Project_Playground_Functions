@@ -1,33 +1,43 @@
 // Desafio 1
-
 function compareTrue(a, b) {
   return a === true && b === true;
 }
-console.log(compareTrue(true, true));
 
 // Desafio 2
 function calcArea(base, height) {
   return (base * height) /2;
-}console.log(calcArea(10, 50));
+}
 
 // Desafio 3
 function splitSentence(sentence) {
   return sentence.split(' ');
-}console.log(splitSentence("vai com tudo"))
+}
 
 // Desafio 4
-function concatName() {
-  // seu código aqui
+function concatName(lista) {
+  return `${lista[lista.length-1]} ${lista[0]}`;
 }
 
 // Desafio 5
-function footballPoints() {
-  // seu código aqui
+function footballPoints(wins, ties) {
+  return wins*3 + ties;
 }
 
 // Desafio 6
-function highestCount() {
-  // seu código aqui
+let total = 0;
+let maior = 0;
+let i = 0;
+function highestCount(numeros) {
+  for(i; i < numeros.length; i += 1) {
+    if (numeros[i] > maior) {
+      maior = numeros[i];
+    }
+  }
+  for(i; i < numeros.length; i += 1) {
+    if (maior === numeros.length) {
+      total = total += 1;
+    }
+  }
 }
 
 // Desafio 7
