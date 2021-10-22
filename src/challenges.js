@@ -15,26 +15,25 @@ function splitSentence(sentence) {
 
 // Desafio 4
 function concatName(lista) {
-  return lista[lista.length-1] + " " + lista[0];
+  return lista[lista.length-1] + ' ' + lista[0];
 }
 
 // Desafio 5
 function footballPoints(wins, ties) {
-  return wins*3 + ties;
+  return wins * 3 + ties;
 }
 
 // Desafio 6
-function highestCount(numeros) {
-let total = 0;
-let maior = 0;
-let i;
-  for(i = 0; i < numeros.length; i += 1) {
-    if (numeros[i] > maior) {
-      maior = numeros[i]; 
+function highestCount(num) {
+  let total = 0;
+  let maior = 0;
+  for (let i = 0; i < num.length; i += 1) {
+    if (num[i] > maior) {
+      maior = num[i];
     }
   }
-  for(i = 0; i < numeros.length; i += 1) {
-    if (maior === numeros[i]) {
+  for (let i = 0; i < num.length; i += 1) {
+    if (maior === num[i]) {
       total += 1;
     }
   }
