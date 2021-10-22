@@ -15,7 +15,7 @@ function splitSentence(sentence) {
 
 // Desafio 4
 function concatName(lista) {
-  return `${lista[lista.length-1]} ${lista[0]}`;
+  return lista[lista.length-1] + " " + lista[0];
 }
 
 // Desafio 5
@@ -24,20 +24,21 @@ function footballPoints(wins, ties) {
 }
 
 // Desafio 6
+function highestCount(numeros) {
 let total = 0;
 let maior = 0;
-let i = 0;
-function highestCount(numeros) {
-  for(i; i < numeros.length; i += 1) {
+let i;
+  for(i = 0; i < numeros.length; i += 1) {
     if (numeros[i] > maior) {
-      maior = numeros[i];
+      maior = numeros[i]; 
     }
   }
-  for(i; i < numeros.length; i += 1) {
-    if (maior === numeros.length) {
-      total = total += 1;
+  for(i = 0; i < numeros.length; i += 1) {
+    if (maior === numeros[i]) {
+      total += 1;
     }
   }
+  return total;
 }
 
 // Desafio 7
