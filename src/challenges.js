@@ -24,8 +24,7 @@ function footballPoints(wins, ties) {
 }
 
 // Desafio 6
-function highestCount() {
-  let num = [];
+function highestCount(num) {
   let total = 0;
   let maior = 0;
   for (let i = 0; i < num.length; i += 1) {
@@ -42,8 +41,9 @@ function highestCount() {
 }
 
 // Desafio 7
-function catAndMouse(mouse, cat1, cat2) {
-  let bichos = ["mouse","cat1","cat2","dgato1","dgato2"]
+function catAndMouse(mouse,cat1,cat2) {
+  let dgato1;
+  let dgato2;
   let resultado;
   if (mouse < cat1) {
     dgato1 = mouse - cat1;
@@ -66,8 +66,7 @@ function catAndMouse(mouse, cat1, cat2) {
 }
 
 // Desafio 8
-function fizzBuzz() {
-  let nfb;
+function fizzBuzz(nfb) {
   let tipos = [];
   for (let i = 0; i < nfb.length; i += 1) {
     if (nfb[i] % 3 === 0 && nfb[i] % 5 === 0) {
