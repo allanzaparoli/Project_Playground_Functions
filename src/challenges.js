@@ -42,12 +42,8 @@ function highestCount() {
 }
 
 // Desafio 7
-function catAndMouse() {
-  let mouse;
-  let cat1;
-  let cat2;
-  let dgato1;
-  let dgato2;
+function catAndMouse(mouse, cat1, cat2) {
+  let bichos = ["mouse","cat1","cat2","dgato1","dgato2"]
   let resultado;
   if (mouse < cat1) {
     dgato1 = mouse - cat1;
