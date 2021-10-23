@@ -15,7 +15,7 @@ function splitSentence(sentence) {
 
 // Desafio 4
 function concatName(lista) {
-  return lista[lista.length-1] +' '+ lista[0];
+  return lista[lista.length-1]+' '+lista[0];
 }
 
 // Desafio 5
@@ -24,7 +24,8 @@ function footballPoints(wins, ties) {
 }
 
 // Desafio 6
-function highestCount(num){
+function highestCount(){
+  let num = [];
   let total = 0;
   let maior = 0;
   for (let i = 0; i < num.length; i += 1) {
@@ -41,7 +42,10 @@ function highestCount(num){
 }
 
 // Desafio 7
-function catAndMouse(mouse,cat1,cat2){
+function catAndMouse(){
+  let mouse;
+  let cat1;
+  let cat2;
   let dgato1;
   let dgato2;
   let resultado;
@@ -57,7 +61,7 @@ function catAndMouse(mouse,cat1,cat2){
   }
   if (dgato1 > dgato2) {
     resultado = 'cat1';
-  } else if (dgato1 == dgato2) {
+  } else if (dgato1 === dgato2) {
     resultado = 'os gatos trombam e o rato foge';
   } else {
     resultado = 'cat2';
