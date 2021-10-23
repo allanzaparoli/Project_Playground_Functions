@@ -15,7 +15,7 @@ function splitSentence(sentence) {
 
 // Desafio 4
 function concatName(lista) {
-  return lista[lista.length-1] + ' ' + lista[0];
+  return lista[lista.length-1] +' '+ lista[0];
 }
 
 // Desafio 5
@@ -24,7 +24,7 @@ function footballPoints(wins, ties) {
 }
 
 // Desafio 6
-function highestCount(num) {
+function highestCount(num){
   let total = 0;
   let maior = 0;
   for (let i = 0; i < num.length; i += 1) {
@@ -41,42 +41,42 @@ function highestCount(num) {
 }
 
 // Desafio 7
-function catAndMouse(mouse, cat1, cat2) {
-  var dgato1;
-  var dgato2;
+function catAndMouse(mouse,cat1,cat2){
+  let dgato1;
+  let dgato2;
   let resultado;
-  if(mouse < cat1){
+  if (mouse < cat1){
     dgato1 = mouse - cat1;
-  }else {
+  } else {
     dgato1 = cat1 - mouse;
   }
-  if( mouse < cat2){
+  if (mouse < cat2){
     dgato2 = mouse - cat2;
-  }else{
+  } else {
     dgato2 = cat2 - mouse;
   }
-  if(dgato1 > dgato2) {
-    resultado = "cat1";
-  }else if(dgato1 == dgato2){
-    resultado = "os gatos trombam e o rato foge";
-  }else{
-    resultado = "cat2";
+  if (dgato1 > dgato2) {
+    resultado = 'cat1';
+  } else if (dgato1 == dgato2) {
+    resultado = 'os gatos trombam e o rato foge';
+  } else {
+    resultado = 'cat2';
   }
   return resultado;
 }
 
 // Desafio 8
-function fizzBuzz(nfb) {
+function fizzBuzz(nfb){
   let tipos = [];
-  for(let i = 0; i < nfb.length; i += 1) {
-    if(nfb[i] % 3 === 0 && nfb[i] % 5 === 0) {
+  for (let i = 0; i < nfb.length; i += 1) {
+    if (nfb[i] % 3 === 0 && nfb[i] % 5 === 0) {
       tipos.push('fizzBuzz');
-    }else if(nfb[i] % 5 === 0) {
-      tipos.push('buzz')
-    }else if(nfb[i] % 3 === 0) {
+    } else if (nfb[i] % 5 === 0) {
+      tipos.push('buzz');
+    } else if (nfb[i] % 3 === 0) {
       tipos.push('fizz');
     }
-    else{
+    else {
       tipos.push('bug!');
     }
   }
