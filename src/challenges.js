@@ -15,7 +15,7 @@ function splitSentence(sentence) {
 
 // Desafio 4
 function concatName(lista) {
-  return lista[lista.length-1]+''+lista[0];
+  return lista[lista.length-1].concat(lista[0]);
 }
 
 // Desafio 5
@@ -41,7 +41,7 @@ function highestCount(num) {
 }
 
 // Desafio 7
-function catAndMouse(mouse,cat1,cat2) {
+function catAndMouse(mouse, cat1, cat2) {
   let dgato1;
   let dgato2;
   let resultado;
