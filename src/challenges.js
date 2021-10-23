@@ -5,7 +5,7 @@ function compareTrue(a, b) {
 
 // Desafio 2
 function calcArea(base, height) {
-  return (base * height) /2;
+  return (base * height) / 2;
 }
 
 // Desafio 3
@@ -41,21 +41,54 @@ function highestCount(num) {
 }
 
 // Desafio 7
-function catAndMouse() {
-  // seu código aqui
+function catAndMouse(mouse, cat1, cat2) {
+  var dgato1;
+  var dgato2;
+  let resultado;
+  if(mouse < cat1){
+    dgato1 = mouse - cat1;
+  }else {
+    dgato1 = cat1 - mouse;
+  }
+  if( mouse < cat2){
+    dgato2 = mouse - cat2;
+  }else{
+    dgato2 = cat2 - mouse;
+  }
+  if(dgato1 > dgato2) {
+    resultado = "cat1";
+  }else if(dgato1 == dgato2){
+    resultado = "os gatos trombam e o rato foge";
+  }else{
+    resultado = "cat2";
+  }
+  return resultado;
 }
 
 // Desafio 8
-function fizzBuzz() {
-  // seu código aqui
+function fizzBuzz(nfb) {
+  let tipos = [];
+  for(let i = 0; i < nfb.length; i += 1) {
+    if(nfb[i] % 3 === 0 && nfb[i] % 5 === 0) {
+      tipos.push('fizzBuzz');
+    }else if(nfb[i] % 5 === 0) {
+      tipos.push('buzz')
+    }else if(nfb[i] % 3 === 0) {
+      tipos.push('fizz');
+    }
+    else{
+      tipos.push('bug!');
+    }
+  }
+  return tipos;
 }
 
 // Desafio 9
 function encode() {
-  // seu código aqui
+  
 }
 function decode() {
-  // seu código aqui
+
 }
 
 module.exports = {
