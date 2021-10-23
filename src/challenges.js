@@ -15,7 +15,7 @@ function splitSentence(sentence) {
 
 // Desafio 4
 function concatName(lista) {
-  return lista[lista.length-1]+' '+lista[0];
+  return lista[lista.length-1]+''+lista[0];
 }
 
 // Desafio 5
@@ -24,7 +24,7 @@ function footballPoints(wins, ties) {
 }
 
 // Desafio 6
-function highestCount(){
+function highestCount() {
   let num = [];
   let total = 0;
   let maior = 0;
@@ -42,19 +42,19 @@ function highestCount(){
 }
 
 // Desafio 7
-function catAndMouse(){
+function catAndMouse() {
   let mouse;
   let cat1;
   let cat2;
   let dgato1;
   let dgato2;
   let resultado;
-  if (mouse < cat1){
+  if (mouse < cat1) {
     dgato1 = mouse - cat1;
   } else {
     dgato1 = cat1 - mouse;
   }
-  if (mouse < cat2){
+  if (mouse < cat2) {
     dgato2 = mouse - cat2;
   } else {
     dgato2 = cat2 - mouse;
@@ -70,7 +70,8 @@ function catAndMouse(){
 }
 
 // Desafio 8
-function fizzBuzz(nfb){
+function fizzBuzz() {
+  let nfb;
   let tipos = [];
   for (let i = 0; i < nfb.length; i += 1) {
     if (nfb[i] % 3 === 0 && nfb[i] % 5 === 0) {
@@ -79,8 +80,7 @@ function fizzBuzz(nfb){
       tipos.push('buzz');
     } else if (nfb[i] % 3 === 0) {
       tipos.push('fizz');
-    }
-    else {
+    } else {
       tipos.push('bug!');
     }
   }
