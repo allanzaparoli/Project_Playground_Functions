@@ -91,6 +91,7 @@ function encode(letras) {
     letras = letras.replace(/o/g, '4');
     letras = letras.replace(/u/g, '5');
   }
+  return letras;
 }
 function decode(letras) {
   for(let i = 0; i < letras.length; i += 1) {
@@ -99,6 +100,8 @@ function decode(letras) {
     letras = letras.replace(/3/g, 'i');
     letras = letras.replace(/4/g, 'o');
     letras = letras.replace(/5/g, 'u');
+  }
+  return letras;
 }
 
 module.exports = {
