@@ -17,7 +17,7 @@ function splitSentence(sentence) {
 function concatName(lista) {
   let first = lista[0];
   let last = lista[lista.length -1];
-  let result = `$(last),$(first)`;
+  let result = `${last}, ${first}`;
   return result;
 }
 
@@ -35,7 +35,7 @@ function highestCount(num) {
     if (maior === num[i]) {
         total += 1;
       }
-  } 
+  }
   return total;
 }
 
@@ -83,11 +83,22 @@ function fizzBuzz(nfb) {
 }
 
 // Desafio 9
-function encode() {
-  
+function encode(letras) {
+  for(let i = 0; i < letras.length; i += 1) {
+    letras = letras.replace(/a/g, '1');
+    letras = letras.replace(/e/g, '2');
+    letras = letras.replace(/i/g, '3');
+    letras = letras.replace(/o/g, '4');
+    letras = letras.replace(/u/g, '5');
+  }
 }
-function decode() {
-
+function decode(letras) {
+  for(let i = 0; i < letras.length; i += 1) {
+    letras = letras.replace(/1/g, 'a');
+    letras = letras.replace(/2/g, 'e');
+    letras = letras.replace(/3/g, 'i');
+    letras = letras.replace(/4/g, 'o');
+    letras = letras.replace(/5/g, 'u');
 }
 
 module.exports = {
