@@ -15,7 +15,10 @@ function splitSentence(sentence) {
 
 // Desafio 4
 function concatName(lista) {
-  return lista[lista.length-1].concat(lista[0]);
+  let first = lista[0];
+  let last = lista[lista.length -1];
+  let result = `$(last),$(first)`;
+  return result;
 }
 
 // Desafio 5
@@ -27,18 +30,15 @@ function footballPoints(wins, ties) {
 function highestCount(num) {
   let total = 0;
   let maior = 0;
-  for (let i = 0; i < num.length; i += 1) {
-    if (num[i] > maior) {
-      maior = num[i];
-    }
-  }
-  for (let i = 0; i < num.length; i += 1) {
+  for (let i = 0; i < num.length; i += 1) { 
+      maior =  Math.max.apply(null, num);
     if (maior === num[i]) {
-      total += 1;
-    }
-  }
+        total += 1;
+      }
+  } 
   return total;
 }
+
 
 // Desafio 7
 function catAndMouse(mouse, cat1, cat2) {
