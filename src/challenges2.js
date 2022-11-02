@@ -1,18 +1,16 @@
 // Desafio 10
 function techList(tecName) {
   tecName = {
-   tec: ["React", "Jest", "HTML", "CSS", "JavaScript"],
-   nome: "Allan"
+  tec: ['React', 'Jest', 'HTML', 'CSS', 'JavaScript'],
+  nome: 'Allan'
   }
   let ListaCompleta = tecName.tec.sort();
-    for(let i = 0; i < 5; i += 1) {
-     if(ListaCompleta[i]=== "") {
-       tecName = "Vazio!";
-     }
+  for (ListaCompleta of ListaCompleta) {
+    // if (ListaCompleta[i] === '') {
+    //    tecName = 'Vazio!';
     }
-    return tecName;
-  }
-
+  return ListaCompleta;
+}
 // Desafio 11
 function generatePhoneNumber() {
   // seu código aqui
